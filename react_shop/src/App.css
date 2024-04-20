@@ -7,6 +7,14 @@
   pointer-events: none;
 }
 
+.main-bg {
+  background-image: url('./main.png'); /* css에서 이미지 넣는법 */
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
