@@ -5,8 +5,9 @@ import ScrollIndicator from './componenets/scroll-indicator/scroll-indicator';
 function App() {
   return (
     <div className="App">
-      {/* https://dummyjson.com/products?limit=100 */}
-      <ScrollIndicator />
+      <ScrollIndicator 
+        url={`https://dummyjson.com/products?limit=100`}
+      />
     </div>
   );
 }
