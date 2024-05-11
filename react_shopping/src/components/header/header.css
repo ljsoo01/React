@@ -1,0 +1,43 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  mat-width: 1152px;
+  margin: auto;
+}
+
+.nav-title {
+  color: navy;
+  margin-left: 1rem; /*px: 고정값, rem: 반응값, (1rem == 16px)*/
+  font-weight: bold;
+  font-size: 1.25rem;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.nav-ul {
+  display: flex;
+  padding: 0 10px;
+  font-weight: bolder;
+  align-items: center;
+}
+
+.nav-li {
+  padding: 0 10px;
+  cursor: pointer;
+  color: #4a5568;
+}
+
+/* 제목 크기를 반응형으로 */
+@media (min-width: 640px) {
+  .nav-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-title {
+    font-size: 1.875rem;
+  }
+}
