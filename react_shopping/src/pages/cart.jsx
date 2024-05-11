@@ -1,6 +1,8 @@
 import { useSelector } from "react-redux";
 import "./cart.css";
 import { useEffect, useState } from "react";
+import CartTile from "../components/cart-tile/cart-tile";
+import { Link } from "react-router-dom";
 
 export default function Cart() {
   
@@ -27,19 +29,26 @@ export default function Cart() {
               <div>
                 <h1>장바구니 내역</h1>
                 <p>담긴 갯수<span>: {cartState.length}</span></p>
-                <p>총 가격<span>: {totalPrice * 1300}원</span></p>
+                <p>총 가격<span>: {Math.floor(totalPrice * 1300).toLocaleString('ko-KR')}원</span></p>
               </div>
               <div className='centered-flex-column'>
                 {
                   cartState.map((item, idx) => {
-                    <div>item</div>
+                    return (
+                      <CartTile key={idx} cartItem={item}/>
+                    )
                   })
                 }
               </div>
             </div>
           </div>
         ) : (
-          <div>현재 담긴 상품이 없습니다.</div>
+          <div>
+            <h1>현재 담긴 상품이 없습니다.</h1>
+            <Link to={'/'}>
+              <button>담으러 가기</button>
+            </Link>
+          </div>
         )
       }
     </div>
