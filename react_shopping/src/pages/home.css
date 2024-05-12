@@ -1,9 +1,9 @@
 .my-loading {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  display: flex; /* Flexbox 레이아웃 사용 */
+  justify-content: center; /* 주축 중앙 정렬 */
+  align-items: center; /* 교차축 중앙 정렬 */
+  height: 100vh; /* 전체 화면의 높이 */
 }
 
 .my-product-grid {

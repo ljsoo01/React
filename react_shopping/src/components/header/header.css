@@ -1,9 +1,9 @@
 .nav-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
   height: 80px;
-  mat-width: 1152px;
+  max-width: 1152px;
   margin: auto;
 }
 

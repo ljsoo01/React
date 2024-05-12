@@ -1,9 +1,9 @@
 .flex-col-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* 아이템들을 세로로 정렬 */
   align-items: center;
   border: 2px solid navy;
-  gap: 12px;
+  gap: 12px; /* 아이템 간의 간격 */
   padding: 16px;
   border-radius: 0.75rem; /* 16px == 1rem */
   margin-top: 40px;
@@ -28,8 +28,8 @@
 
 .add-cart-btn-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: cneter;
+  align-items: center; /* 세로축 중앙 정렬 */
+  justify-content: center; /* 가로축 중앙 정렬 */
   width: 100%;
 }
 
